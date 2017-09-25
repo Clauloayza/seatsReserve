@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Lista de asientos</title>
+  </head>
+  <body>
+   <header class="container">
+       <h1 class="text-center">RESERVA DE ASIENTOS</h1>
+   </header>
+   <section>
+       <table id="tablaPasajeros" align="center" border=1>
+          <tr>
+              <td class="seats" id="04">04</td>
+              <td class="seats" id="08">08</td>
+              <td class="seats" id="12">12</td>
+              <td class="seats" id="16">16</td>
+              <td class="seats" id="20">20</td>
+              <td class="seats" id="24">24</td>
+              <td class="seats" id="28">28</td>
+              <td class="seats" id="32">32</td>
+          </tr>
+          <tr>
+              <td class="seats" id="03">03</td>
+              <td class="seats" id="07">07</td>
+              <td class="seats" id="11">11</td>
+              <td class="seats" id="15">15</td>
+              <td class="seats" id="19">19</td>
+              <td class="seats" id="23">23</td>
+              <td class="seats" id="27">27</td>
+              <td class="seats" id="31">31</td>
+          </tr>
+    </table>
+    <br>
+    <table id="tablaPasajeros" align="center" border=1>
+          <tr>
+              <td class="seats" id="02">02</td>
+              <td class="seats" id="06">06</td>
+              <td class="seats" id="10">10</td>
+              <td class="seats" id="14">14</td>
+              <td class="seats" id="18">18</td>
+              <td class="seats" id="22">22</td>
+              <td class="seats" id="26">26</td>
+              <td class="seats" id="30">30</td>
+          </tr>
+          <tr>
+              <td class="seats" id="01">01</td>
+              <td class="seats" id="05">05</td>
+              <td class="seats" id="09">09</td>
+              <td class="seats" id="13">13</td>
+              <td class="seats" id="17">17</td>
+              <td class="seats" id="21">21</td>
+              <td class="seats" id="25">25</td>
+              <td class="seats" id="29">29</td>
+          </tr>
+    </table>
+   </section>
+   <section class="container">
+      <div align="center">
+        <div align="center">
+            <h3><strong>Registro de pasajeros</strong></h3>
+        </div>
+        <br/>
+        <h3>Asiento Seleccionado: </h3>
+        <div id="mostrar" align="center" class="selectSeat"></div>
+        <div id="estado" align="center"></div>
+        <div id="datos">
+         <div class="form-group">
+             <label for="usr">Nombres:</label>
+             <input type="text" class="form-control" id="userNombre" placeHolder="Ingresa su nombre" style="width: 40%">
+             <br>
+             <label for="usr">Apellidos:</label>
+             <input type="text" class="form-control" id="userApellido" placeHolder="Ingrese su Apellido" style="width: 40%">
+             <br>
+             <label for="usr">DNI:</label>
+             <input type="text" class="form-control" id="userDNI" placeHolder="12345678" style="width: 40%">
+         </div>
+        </div><br/>
+        <div id="botones">
+          <button class="btn btn-info" id="btnReservar" onclick="reservar()">Reservar</button>
+          
+        </div><br />
+        <div id="imprimir" align="center"></div>
+        <button class="btn btn-success" id="btnLimpiarReservar" onclick="limpiarReservar()">Aceptar</button>
+      </div>
+    </section>
+    <section align="center">
+      <h3>Registro completo</h3>
+      <button class="btn btn-warning" id="btnListar" onclick="listar()">Listar</button>
+      <button class="btn btn-danger" id="btnLimpiarLista" onclick="limpiarLista()">Limpiar</button>
+      <div id="listado" align="center"></div>
+    </section>
+    <footer style="height: 50px">
+        
+    </footer>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
