@@ -52,8 +52,7 @@ function reservar (){
   let comprobar = buscarAsiento();
     
   if(comprobar == true){
-      
-    alert("El asiento ya está ocupado");
+    swal("Asiento ocupado!", "elije otro asiento");  
       
   }
   else if((nombre == "") && (apellido == "") && (dni == "")){
